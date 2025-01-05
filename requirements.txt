@@ -3,5 +3,5 @@ plotly
 seaborn
 matplotlib
 scipy
-kaggle
+kagglehub
 
