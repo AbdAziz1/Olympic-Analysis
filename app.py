@@ -4,9 +4,16 @@ import preprocess,helper
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
+import kagglehub
+import os
 
-df = pd.read_csv('athlete_events.csv')
-region_df = pd.read_csv('noc_regions.csv')
+path = kagglehub.dataset_download("heesoo37/120-years-of-olympic-history-athletes-and-results")
+
+file_path_athlete = os.path.join(path, 'athlete_events.csv')
+file_path_noc = os.path.join(path, 'noc_regions.csv') 
+
+df = pd.read_csv(file_path_athlete)
+region_df = pd.read_csv(file_path_noc)
 
 df = preprocess.preprocess(df,region_df)
 
