@@ -18,7 +18,7 @@ region_df = pd.read_csv(file_path_noc)
 df = preprocess.preprocess(df,region_df)
 
 st.sidebar.title('Olympic Analysis')
-st.sidebar.image('E:\My Work\olympic analysis\download__2_-removebg-preview.png')
+st.sidebar.image('.\main\download__2_-removebg-preview.png')
 
 
 user_manual = st.sidebar.radio(
